@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "995917751652",
+    "project_id": "computacaomovel-4fb35",
+    "storage_bucket": "computacaomovel-4fb35.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995917751652:android:41b5f91b84680808f5c671",
+        "android_client_info": {
+          "package_name": "com.example.mediavault"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpcx2vZQUoNsZka-jjCmDP4BVb_zzTaGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
