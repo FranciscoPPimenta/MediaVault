@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/portraitRegister">
 
+    <fragment
+        android:id="@+id/portraitRegister"
+        android:name="com.example.mediavault.PortraitRegister"
+        android:label="fragment_portrait_register"
+        tools:layout="@layout/fragment_portrait_register" >
+        <action
+            android:id="@+id/action_portraitRegister_to_portraitLogin"
+            app:destination="@id/portraitLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/portraitLogin"
+        android:name="com.example.mediavault.PortraitLogin"
+        android:label="fragment_portrait_login"
+        tools:layout="@layout/fragment_portrait_login" >
+        <action
+            android:id="@+id/action_portraitLogin_to_portraitRegister"
+            app:destination="@id/portraitRegister" />
+    </fragment>
 </navigation>
