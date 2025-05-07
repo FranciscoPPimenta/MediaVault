@@ -8,4 +8,7 @@
     <string name="Email" translatable="false">E-mail:</string>
     <string name="Password">Password:</string>
     <string name="SignUp">Sign Up</string>
+    <string name="HasAccount"><u>Already have an account? Sign in!</u></string>
+    <string name="SignIn">Sign In</string>
+    <string name="NewHere"><u>New here? Then register now!</u></string>
 </resources>
