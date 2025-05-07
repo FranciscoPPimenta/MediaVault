@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--++Updated 6thMay2025 16:18-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainTeste">
+    <fragment
+        android:id="@+id/mainTeste"
+        android:name="com.example.mediavault.MainTeste"
+        android:label="fragment_main_teste"
+        tools:layout="@layout/fragment_main_teste" >
+        <action
+            android:id="@+id/mainTeste_to_Login"
+            app:destination="@id/login3" />
+        <action
+            android:id="@+id/main_to_logged"
+            app:destination="@id/loggedMainTeste" />
+    </fragment>
+    <fragment
+        android:id="@+id/login3"
+        android:name="com.example.mediavault.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/login_to_logged"
+            app:destination="@id/loggedMainTeste" />
+    </fragment>
+    <fragment
+        android:id="@+id/loggedMainTeste"
+        android:name="com.example.mediavault.LoggedMainTeste"
+        android:label="fragment_logged_main_teste"
+        tools:layout="@layout/fragment_logged_main_teste" >
+        <action
+            android:id="@+id/logged_to_main"
+            app:destination="@id/mainTeste" />
+    </fragment>
+</navigation>
