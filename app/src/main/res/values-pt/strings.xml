@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MediaVault</string>
+    <string name="FirstName">Primeiro Nome:</string>
+    <string name="LastName">Último Nome:</string>
+    <string name="DisplayName">Nome a Amostrar:</string>
+    <string name="Password">Palavra Passe:</string>
+    <string name="SignUp">Registar</string>
+</resources>

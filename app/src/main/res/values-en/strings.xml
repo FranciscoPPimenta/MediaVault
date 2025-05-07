@@ -1,11 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MediaVault</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="FirstName">First Name:</string>
     <string name="LastName">Last Name:</string>
     <string name="DisplayName">Display Name:</string>
-    <string name="Email" translatable="false">E-mail:</string>
     <string name="Password">Password:</string>
     <string name="SignUp">Sign Up</string>
 </resources>
