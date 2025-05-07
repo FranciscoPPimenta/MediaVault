@@ -28,6 +28,12 @@ class SessionManager(context: Context) {
         editor = pref.edit()
     }
 
+    //function to get user id
+    fun getUserID(): String {
+        return pref.getString(SessionManager.KEY_USER_ID,"")?: ""
+    }
+
+
     //Function to create the session after logging in the user
     fun createLoginSession( userId: String) {
         //Changes the boolean to true so it confirms it's logged in

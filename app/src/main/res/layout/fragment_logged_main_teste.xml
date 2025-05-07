@@ -19,4 +19,12 @@
         android:text="Logout"
         android:layout_marginTop="20dp"/>
 
+    <Button
+        android:id="@+id/createPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Playlist"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"/>
+
 </FrameLayout>

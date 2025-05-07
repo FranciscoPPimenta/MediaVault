@@ -25,6 +25,9 @@
         <action
             android:id="@+id/login_to_logged"
             app:destination="@id/loggedMainTeste" />
+        <action
+            android:id="@+id/login_to_register"
+            app:destination="@id/register" />
     </fragment>
     <fragment
         android:id="@+id/loggedMainTeste"
@@ -34,5 +37,25 @@
         <action
             android:id="@+id/logged_to_main"
             app:destination="@id/mainTeste" />
+        <action
+            android:id="@+id/logged_to_play"
+            app:destination="@id/createPlaylist" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPlaylist"
+        android:name="com.example.mediavault.CreatePlaylist"
+        android:label="fragment_create_playlist"
+        tools:layout="@layout/fragment_create_playlist" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.mediavault.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/register_to_login"
+            app:destination="@id/login3" />
+        <action
+            android:id="@+id/register_to_logged"
+            app:destination="@id/loggedMainTeste" />
     </fragment>
 </navigation>

@@ -25,7 +25,7 @@ class LoggedMainTeste : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentLoggedMainTesteBinding.inflate(inflater, container, false)
         return binding.root
@@ -35,6 +35,10 @@ class LoggedMainTeste : Fragment() {
         binding.logoutButton.setOnClickListener{
             sessionManager.logoutUser()
             findNavController().navigate(R.id.logged_to_main)
+        }
+
+        binding.createPButton.setOnClickListener{
+            findNavController().navigate(R.id.logged_to_play)
         }
     }
 
