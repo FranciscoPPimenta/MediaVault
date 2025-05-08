@@ -23,56 +23,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/othersButton"
-            android:layout_width="148dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="51dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#D9D9D9"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:text="Others"
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="116dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/fundo_cinzento"
+            android:fontFamily="@font/inter_regular"
+            android:text="Nome"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="@+id/title_text"
-            app:layout_constraintTop_toBottomOf="@+id/title_text" />
-
-        <Button
-            android:id="@+id/yourButton"
-            android:layout_width="148dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="301dp"
-            android:layout_marginEnd="300dp"
-            android:backgroundTint="#F6F6F6"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:text="Yours"
-            android:textColor="#000000"
-            app:layout_constraintBaseline_toBaselineOf="@+id/othersButton"
-            app:layout_constraintEnd_toStartOf="@+id/textView3"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:fontFamily="@font/inter_regular"
-            android:text="Sort"
+            android:layout_marginBottom="151dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="April"
             android:textColor="#000000"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-            app:layout_constraintStart_toEndOf="@+id/imageView6" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="45dp"
-            android:layout_marginBottom="160dp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_sort" />
+            app:layout_constraintStart_toStartOf="@+id/textView5" />
 
         <ImageButton
             android:id="@+id/imageButton5"
@@ -107,47 +84,25 @@
             app:srcCompat="@drawable/ic_profile" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:fontFamily="@font/inter_regular"
-            android:text="Filter"
-            android:textColor="#000000"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-            app:layout_constraintEnd_toStartOf="@+id/imageView7" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView7"
-            app:srcCompat="@drawable/ic_sort" />
-
-        <TextView
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="58dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="55dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Playlists"
+            android:text="Playlist Name"
             android:textColor="#1E3A8A"
             android:textSize="32sp"
-            app:layout_constraintStart_toStartOf="@+id/yourButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/title_text"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo_menu" />
 
@@ -166,17 +121,14 @@
             android:id="@+id/addButton"
             android:layout_width="148dp"
             android:layout_height="38dp"
-            android:layout_marginStart="72dp"
-            android:layout_marginEnd="73dp"
-            android:layout_marginBottom="44dp"
             android:backgroundTint="#1D3A8A"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
             android:text="Add +"
             android:textColor="#FFF"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/othersButton" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

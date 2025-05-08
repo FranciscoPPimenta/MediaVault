@@ -135,7 +135,7 @@
             android:layout_marginStart="58dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Playlists"
+            android:text="Albums"
             android:textColor="#1E3A8A"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="@+id/yourButton"
