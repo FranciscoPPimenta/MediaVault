@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Menu de Navegação -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+    <!-- Conteúdo Principal -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/nineButton"
+            android:layout_width="91dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginBottom="36dp"
+            android:background="null"
+            android:text="16:9"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/threeButton" />
+
+        <Button
+            android:id="@+id/threeButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="603dp"
+            android:layout_marginBottom="12dp"
+            android:background="null"
+            android:text="3:2"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/nineButton"
+            app:layout_constraintEnd_toStartOf="@+id/submitButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourButton" />
+
+        <Button
+            android:id="@+id/fourButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="614dp"
+            android:layout_marginBottom="73dp"
+            android:background="null"
+            android:text="4:3"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/threeButton"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oneButton" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="591dp"
+            android:layout_marginBottom="155dp"
+            android:backgroundTint="#1D3A8A"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="Original"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="327dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Editing"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="320dp"
+            android:layout_marginBottom="131dp"
+            android:background="null"
+            app:layout_constraintBottom_toTopOf="@+id/editButton"
+            app:layout_constraintEnd_toStartOf="@+id/textView16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="96dp"
+            android:backgroundTint="#1D3A8A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/threeButton"
+            app:srcCompat="@drawable/ic_crop" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="28dp"
+            android:background="null"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fourButton"
+            app:srcCompat="@drawable/ic_minimze" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="22dp"
+            android:background="null"
+            app:layout_constraintBottom_toTopOf="@+id/submitButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editButton"
+            app:srcCompat="@drawable/ic_rotate" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_check" />
+
+        <Button
+            android:id="@+id/oneButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginBottom="18dp"
+            android:background="null"
+            android:text="1:1"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/fourButton"
+            app:layout_constraintEnd_toEndOf="@+id/fourButton"
+            app:layout_constraintStart_toStartOf="@+id/fourButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
