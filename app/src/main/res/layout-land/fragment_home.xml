@@ -5,19 +5,23 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    tools:context=".Home">
 
-    <!-- Menu de Navegação -->
+    <!-- MENU LATERAL AZUL -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
+        android:layout_width="280dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#1A3D8F"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white" />
 
-    <!-- Conteúdo Principal -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
@@ -78,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
-            android:background="null"
+            android:background="@null"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_profile" />
@@ -88,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:background="null"
+            android:background="@null"
             app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
             app:layout_constraintEnd_toStartOf="@+id/imageButton7"
             app:srcCompat="@drawable/ic_add" />
@@ -99,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="8dp"
-            android:background="null"
+            android:background="@null"
             app:layout_constraintEnd_toStartOf="@+id/imageButton8"
             app:layout_constraintTop_toTopOf="@+id/imageButton8"
             app:srcCompat="@drawable/ic_notifications" />
@@ -110,12 +114,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
-            android:background="null"
+            android:background="@null"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_menu" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.drawerlayout.widget.DrawerLayout>
