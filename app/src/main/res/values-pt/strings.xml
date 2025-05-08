@@ -14,4 +14,7 @@
     <string name="Playlists">Listas</string>
     <string name="Albums">Álbuns</string>
     <string name="Tags">Marcas</string>
+    <string name="Title">Título</string>
+    <string name="homeGreeting">Bem-vindo de volta</string>
+    <string name="Playlists_long">Listas de reprodução</string>
 </resources>

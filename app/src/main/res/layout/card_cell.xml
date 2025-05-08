@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        app:cardElevation="7dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mediavault_high_res"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Upper Title"
+                android:textSize="25sp"
+                android:textColor="#1E3A8A"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/cardType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of collection"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textColor="#1E3A8A"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

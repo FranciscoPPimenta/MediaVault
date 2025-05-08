@@ -31,6 +31,10 @@ class PortraitRegister : Fragment() {
             findNavController().navigate(R.id.action_portraitRegister_to_portraitLogin)
         }
 
+        binding.buttonSignUp.setOnClickListener{
+            findNavController().navigate(R.id.action_portraitRegister_to_portraitHome)
+        }
+
         return binding.root
     }
 

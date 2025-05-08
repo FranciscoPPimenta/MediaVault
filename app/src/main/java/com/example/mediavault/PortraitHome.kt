@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.mediavault.databinding.FragmentPortraitHomeBinding
 import com.example.mediavault.databinding.FragmentPortraitRegisterBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -29,6 +31,12 @@ class PortraitHome : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentPortraitHomeBinding.inflate(inflater, container, false)
+
+        val recyclerView = requireView().findViewById<RecyclerView>(R.id.recyclerPlaylists)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+
+        val cardList = listOf("Teste1", "Teste2", "Teste3", "Teste4", "Teste5")
+        recyclerView.adapter = CardAdapter(cardList)
 
         val bottomNavigationView: BottomNavigationView = binding.bottomNav
         val navController = findNavController()

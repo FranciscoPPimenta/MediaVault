@@ -14,4 +14,7 @@
     <string name="Playlists">Playlists</string>
     <string name="Albums">Albums</string>
     <string name="Tags">Tags</string>
+    <string name="Title">Title</string>
+    <string name="homeGreeting">Welcome back</string>
+    <string name="Playlists_long">Playlists</string>
 </resources>
