@@ -9,4 +9,9 @@
     <string name="HasAccount"><u>Já tens uma conta? Inicia sessão!</u></string>
     <string name="SignIn">Entrar</string>
     <string name="NewHere"><u>Novo por cá? Faz o registo de conta!</u></string>
+    <string name="Home">Início</string>
+    <string name="About">Créditos</string>
+    <string name="Playlists">Listas</string>
+    <string name="Albums">Álbuns</string>
+    <string name="Tags">Marcas</string>
 </resources>

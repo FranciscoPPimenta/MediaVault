@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_portraitRegister_to_portraitLogin"
             app:destination="@id/portraitLogin" />
+        <action
+            android:id="@+id/action_portraitRegister_to_portraitHome"
+            app:destination="@id/portraitHome" />
     </fragment>
     <fragment
         android:id="@+id/portraitLogin"
@@ -22,5 +25,98 @@
         <action
             android:id="@+id/action_portraitLogin_to_portraitRegister"
             app:destination="@id/portraitRegister" />
+        <action
+            android:id="@+id/action_portraitLogin_to_portraitHome"
+            app:destination="@id/portraitHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/portraitHome"
+        android:name="com.example.mediavault.PortraitHome"
+        android:label="fragment_portrait_home"
+        tools:layout="@layout/fragment_portrait_home" >
+        <action
+            android:id="@+id/action_portraitHome_to_portraitAbout"
+            app:destination="@id/portraitAbout" />
+        <action
+            android:id="@+id/action_portraitHome_to_portraitYourPlaylists"
+            app:destination="@id/portraitYourPlaylists" />
+        <action
+            android:id="@+id/action_portraitHome_to_portraitYourAlbums"
+            app:destination="@id/portraitYourAlbums" />
+        <action
+            android:id="@+id/action_portraitHome_to_portraitTags"
+            app:destination="@id/portraitTags" />
+    </fragment>
+    <fragment
+        android:id="@+id/portraitAbout"
+        android:name="com.example.mediavault.PortraitAbout"
+        android:label="fragment_portrait_about"
+        tools:layout="@layout/fragment_portrait_about" >
+        <action
+            android:id="@+id/action_portraitAbout_to_portraitHome"
+            app:destination="@id/portraitHome" />
+        <action
+            android:id="@+id/action_portraitAbout_to_portraitYourAlbums"
+            app:destination="@id/portraitYourAlbums" />
+        <action
+            android:id="@+id/action_portraitAbout_to_portraitTags"
+            app:destination="@id/portraitTags" />
+        <action
+            android:id="@+id/action_portraitAbout_to_portraitYourPlaylists"
+            app:destination="@id/portraitYourPlaylists" />
+    </fragment>
+    <fragment
+        android:id="@+id/portraitYourPlaylists"
+        android:name="com.example.mediavault.PortraitYourPlaylists"
+        android:label="fragment_portrait_your_playlists"
+        tools:layout="@layout/fragment_portrait_your_playlists" >
+        <action
+            android:id="@+id/action_portraitYourPlaylists_to_portraitHome"
+            app:destination="@id/portraitHome" />
+        <action
+            android:id="@+id/action_portraitYourPlaylists_to_portraitAbout"
+            app:destination="@id/portraitAbout" />
+        <action
+            android:id="@+id/action_portraitYourPlaylists_to_portraitYourAlbums"
+            app:destination="@id/portraitYourAlbums" />
+        <action
+            android:id="@+id/action_portraitYourPlaylists_to_portraitTags"
+            app:destination="@id/portraitTags" />
+    </fragment>
+    <fragment
+        android:id="@+id/portraitYourAlbums"
+        android:name="com.example.mediavault.PortraitYourAlbums"
+        android:label="fragment_portrait_your_albums"
+        tools:layout="@layout/fragment_portrait_your_albums" >
+        <action
+            android:id="@+id/action_portraitYourAlbums_to_portraitHome"
+            app:destination="@id/portraitHome" />
+        <action
+            android:id="@+id/action_portraitYourAlbums_to_portraitAbout"
+            app:destination="@id/portraitAbout" />
+        <action
+            android:id="@+id/action_portraitYourAlbums_to_portraitYourPlaylists"
+            app:destination="@id/portraitYourPlaylists" />
+        <action
+            android:id="@+id/action_portraitYourAlbums_to_portraitTags"
+            app:destination="@id/portraitTags" />
+    </fragment>
+    <fragment
+        android:id="@+id/portraitTags"
+        android:name="com.example.mediavault.PortraitTags"
+        android:label="fragment_portrait_tags"
+        tools:layout="@layout/fragment_portrait_tags" >
+        <action
+            android:id="@+id/action_portraitTags_to_portraitHome"
+            app:destination="@id/portraitHome" />
+        <action
+            android:id="@+id/action_portraitTags_to_portraitAbout"
+            app:destination="@id/portraitAbout" />
+        <action
+            android:id="@+id/action_portraitTags_to_portraitYourPlaylists"
+            app:destination="@id/portraitYourPlaylists" />
+        <action
+            android:id="@+id/action_portraitTags_to_portraitYourAlbums"
+            app:destination="@id/portraitYourAlbums" />
     </fragment>
 </navigation>

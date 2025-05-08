@@ -9,4 +9,9 @@
     <string name="HasAccount"><u>Already have an account? Sign in!</u></string>
     <string name="SignIn">Sign In</string>
     <string name="NewHere"><u>New here? Then register now!</u></string>
+    <string name="Home">Home</string>
+    <string name="About">About</string>
+    <string name="Playlists">Playlists</string>
+    <string name="Albums">Albums</string>
+    <string name="Tags">Tags</string>
 </resources>
