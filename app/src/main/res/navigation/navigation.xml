@@ -16,6 +16,7 @@
         <action
             android:id="@+id/main_to_logged"
             app:destination="@id/loggedMainTeste" />
+
     </fragment>
     <fragment
         android:id="@+id/login3"

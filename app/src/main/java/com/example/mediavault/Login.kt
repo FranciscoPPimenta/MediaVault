@@ -33,6 +33,7 @@ class Login : Fragment() {
             findNavController().navigate(R.id.main_to_logged)
             return
         }
+        (activity as? MainActivity)?.setBottomNavigationVisibility(false)
     }
 
     override fun onCreateView(
@@ -100,6 +101,8 @@ class Login : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        // Restore bottom navigation visibility when leaving this fragment
+        (activity as? MainActivity)?.setBottomNavigationVisibility(true)
         _binding = null
     }
 

@@ -67,4 +67,10 @@ dependencies {
     implementation("androidx.media3:media3-exoplayer:1.6.1")
     implementation("androidx.media3:media3-ui:1.6.1")
     implementation("androidx.media3:media3-exoplayer-dash:1.6.1")
+
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+    implementation("androidx.core:core-ktx:1.10.0")
+    implementation("androidx.window:window:1.0.0")
+
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"  />
+    <item
+        android:id="@+id/about"
+        android:title="About" />
+    <item
+        android:id="@+id/playlists"
+        android:title="Playlists" />
+    <item
+        android:id="@+id/albums"
+        android:title="Albuns" />
+    <item
+        android:id="@+id/tags"
+        android:title="Tags" />
+</menu>

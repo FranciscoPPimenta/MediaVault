@@ -30,7 +30,7 @@ class Register : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        (activity as? MainActivity)?.setBottomNavigationVisibility(false)
     }
 
     override fun onCreateView(
@@ -102,5 +102,12 @@ class Register : Fragment() {
         } else {
             Toast.makeText(requireContext(), "Preencha os campos!s", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        // Restore bottom navigation visibility when leaving this fragment
+        (activity as? MainActivity)?.setBottomNavigationVisibility(true)
+        _binding = null
     }
 }
