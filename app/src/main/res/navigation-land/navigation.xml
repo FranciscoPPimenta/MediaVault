@@ -35,4 +35,10 @@
             android:id="@+id/logged_to_main"
             app:destination="@id/mainTeste" />
     </fragment>
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mediavault.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
 </navigation>

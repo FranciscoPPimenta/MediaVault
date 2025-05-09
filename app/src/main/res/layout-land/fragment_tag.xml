@@ -7,15 +7,18 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <!-- Menu de Navegação -->
+    <!-- MENU LATERAL AZUL -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
+        android:layout_width="280dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#1A3D8F"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white" />
 
     <!-- Conteúdo Principal -->
     <androidx.constraintlayout.widget.ConstraintLayout
