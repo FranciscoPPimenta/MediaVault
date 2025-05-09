@@ -1,7 +1,6 @@
 package com.example.mediavault
 
 import android.os.Bundle
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,9 +9,10 @@ import android.widget.ImageView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.navigation.NavigationView
 
-class Home : Fragment() {
+class Playlist : Fragment() {
 
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
@@ -24,7 +24,15 @@ class Home : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_playlist, container, false)
+
+        // Botão que abre o BottomSheet
+        val showMenuButton: ImageButton = view.findViewById(R.id.imageButton5)
+        showMenuButton.setOnClickListener {
+            val createMenuFragment = CreateMenuFragment()
+            // Use requireActivity().supportFragmentManager para aceder o FragmentManager
+            createMenuFragment.show(requireActivity().supportFragmentManager, createMenuFragment.tag)
+        }
 
         drawerLayout = view.findViewById(R.id.drawer_layout)
         navigationView = view.findViewById(R.id.navigation_view)
@@ -37,14 +45,6 @@ class Home : Fragment() {
 
         btnCloseDrawer.setOnClickListener {
             drawerLayout.closeDrawer(GravityCompat.START)
-        }
-
-        // Botão que abre o BottomSheet
-        val showMenuButton: ImageButton = view.findViewById(R.id.imageButton5)
-        showMenuButton.setOnClickListener {
-            val createMenuFragment = CreateMenuFragment()
-            // Use requireActivity().supportFragmentManager para aceder o FragmentManager
-            createMenuFragment.show(requireActivity().supportFragmentManager, createMenuFragment.tag)
         }
 
         navigationView.setNavigationItemSelectedListener { menuItem ->

@@ -12,7 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 
-class Home : Fragment() {
+class Tag : Fragment() {
 
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
@@ -24,7 +24,7 @@ class Home : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_tag, container, false)
 
         drawerLayout = view.findViewById(R.id.drawer_layout)
         navigationView = view.findViewById(R.id.navigation_view)
@@ -50,6 +50,7 @@ class Home : Fragment() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_home -> {
+                    navigateToFragment(Home())
                     true
                 }
                 R.id.nav_about -> {
@@ -75,5 +76,13 @@ class Home : Fragment() {
         }
 
         return view
+    }
+
+    private fun navigateToFragment(fragment: Fragment) {
+        // Iniciar a transação para substituir o conteúdo do fragmento atual
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.content_layout, fragment)  // Substitua "fragment_container" com o ID correto
+            .addToBackStack(null)  // Para permitir navegar de volta
+            .commit()
     }
 }

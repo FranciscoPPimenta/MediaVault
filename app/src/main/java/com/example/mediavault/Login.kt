@@ -67,7 +67,7 @@ class Login : Fragment() {
             signIn(view)
         }
 
-        binding.registerButton.setOnClickListener {
+        binding.registerButton?.setOnClickListener {
             signUp(view)
         }
 
