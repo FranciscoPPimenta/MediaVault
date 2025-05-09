@@ -25,153 +25,86 @@
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <Button
-            android:id="@+id/confirmButton"
-            android:layout_width="0dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="63dp"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="67dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="7 Playlists"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/changePass"
-            app:layout_constraintTop_toTopOf="@+id/seeAlbums" />
-
-        <Button
-            android:id="@+id/seeAlbums"
-            android:layout_width="0dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="17dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="3 Albums"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toTopOf="@+id/changePass"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editButton"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-        <Button
-            android:id="@+id/changePass"
-            android:layout_width="0dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="163dp"
-            android:layout_marginTop="63dp"
-            android:layout_marginEnd="247dp"
-            android:layout_marginBottom="64dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Change Password"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/confirmButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editButton" />
-
-        <TextView
-            android:id="@+id/textView10"
+        <!--Guias-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="49dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="FirstName SecondName, you have:"
-            android:textColor="#1E3A8A"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/editButton"
-            android:layout_width="0dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="170dp"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="262dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Edit Profile"
-            android:textColor="#FFF"
-            app:layout_constraintEnd_toStartOf="@+id/seeAlbums"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-        <TextView
-            android:id="@+id/textView4"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="MCBootylicious123"
-            android:textColor="#1E3A8A"
-            android:textSize="26sp"
-            app:layout_constraintStart_toStartOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-        <TextView
-            android:id="@+id/textView9"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="480dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="MCBootylicious123@gmail.com"
-            android:textColor="#1E3A8A"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLogoSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6"/>
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="378dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Profile"
+            android:text="@string/NamePhoto"
             android:textColor="#000000"
             android:textSize="32sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop" />
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="0dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="320dp"
-            android:layout_marginBottom="21dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:background="@android:color/transparent"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/textView16"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop"
             app:srcCompat="@drawable/back" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="58dp"
-            android:layout_marginEnd="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView9"
-            app:layout_constraintEnd_toStartOf="@+id/textView9"
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="148dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView4"
-            app:srcCompat="@drawable/profile" />
+            app:srcCompat="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="64dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="@id/imageButton11"
+            app:layout_constraintStart_toEndOf="@id/imageButton11"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_marginStart="60dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@id/imageButton12"
+            app:layout_constraintTop_toTopOf="@+id/imageButton12"
+            app:srcCompat="@drawable/delete" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

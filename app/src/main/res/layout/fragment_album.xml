@@ -23,30 +23,53 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--Guias-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLogoSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6"/>
+
         <Button
             android:id="@+id/othersButton"
-            android:layout_width="148dp"
+            android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="51dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="80dp"
             android:backgroundTint="#D9D9D9"
             android:paddingLeft="12dp"
             android:paddingRight="12dp"
-            android:text="Others"
+            android:text="@string/Others"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="@+id/title_text"
+            app:layout_constraintStart_toStartOf="@+id/yourButton"
             app:layout_constraintTop_toBottomOf="@+id/title_text" />
 
         <Button
             android:id="@+id/yourButton"
-            android:layout_width="148dp"
+            android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="301dp"
-            android:layout_marginEnd="300dp"
             android:backgroundTint="#F6F6F6"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:text="Yours"
+            android:layout_marginStart="30dp"
+            android:text="@string/Yours"
             android:textColor="#000000"
             app:layout_constraintBaseline_toBaselineOf="@+id/othersButton"
             app:layout_constraintEnd_toStartOf="@+id/textView3"
@@ -58,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Sort"
+            android:text="@string/Sort"
             android:textColor="#000000"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"
@@ -69,8 +92,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="45dp"
-            android:layout_marginBottom="160dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/yourButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/ic_sort" />
 
@@ -112,7 +135,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Filter"
+            android:text="@string/Filter"
             android:textColor="#000000"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView7"
@@ -132,13 +155,13 @@
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="58dp"
-            android:layout_marginTop="52dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Playlists"
+            android:text="@string/Albums"
+            android:textAlignment="center"
             android:textColor="#1E3A8A"
             android:textSize="32sp"
-            app:layout_constraintStart_toStartOf="@+id/yourButton"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
         <ImageView
@@ -147,7 +170,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guidelineLogoSide"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo_menu" />
 
@@ -166,17 +189,15 @@
             android:id="@+id/addButton"
             android:layout_width="148dp"
             android:layout_height="38dp"
-            android:layout_marginStart="72dp"
-            android:layout_marginEnd="73dp"
-            android:layout_marginBottom="44dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#1D3A8A"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:text="Add +"
+            android:text="@string/AddPlus"
             android:textColor="#FFF"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/othersButton" />
+            app:layout_constraintTop_toBottomOf="@+id/title_text"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStart" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

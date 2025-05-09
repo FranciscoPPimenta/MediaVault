@@ -23,10 +23,36 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--Guias-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLogoSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6"/>
+
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView2"
             android:layout_width="116dp"
-            android:layout_height="0dp"
+            android:layout_height="123dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="13dp"
             android:layout_marginBottom="15dp"
@@ -35,7 +61,6 @@
             android:text="Nome"
             android:textColor="#000000"
             android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -45,11 +70,40 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="151dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="April"
+            android:layout_marginTop="20dp"
+            android:text="@string/April"
             android:textColor="#000000"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView5" />
+            app:layout_constraintTop_toBottomOf="@id/addButton"
+            app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/fundo_cinzento"
+            android:fontFamily="@font/inter_regular"
+            android:text="Nome"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="151dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="20dp"
+            android:text="@string/March"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2" />
 
         <ImageButton
             android:id="@+id/imageButton5"
@@ -89,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="55dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Playlist Name"
+            android:text="@string/TagName"
             android:textColor="#1E3A8A"
             android:textSize="32sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -100,9 +154,9 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="17dp"
+            android:layout_marginStart="14dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="@+id/title_text"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLogoSide"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo_menu" />
 
@@ -124,7 +178,7 @@
             android:backgroundTint="#1D3A8A"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:text="Add +"
+            android:text="@string/AddPlus"
             android:textColor="#FFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

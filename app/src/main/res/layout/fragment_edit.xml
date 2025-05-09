@@ -27,76 +27,65 @@
 
         <Button
             android:id="@+id/nineButton"
-            android:layout_width="91dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="51dp"
-            android:layout_marginBottom="36dp"
+            android:layout_width="76dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="20dp"
             android:background="@android:color/transparent"
             android:text="16:9"
             android:textColor="#000000"
-            android:textSize="20dp"
+            android:textSize="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/threeButton" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/threeButton"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
             android:layout_marginStart="61dp"
-            android:layout_marginEnd="603dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="40dp"
             android:background="@android:color/transparent"
             android:text="3:2"
             android:textColor="#000000"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/nineButton"
-            app:layout_constraintEnd_toStartOf="@+id/submitButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fourButton" />
-
-        <Button
-            android:id="@+id/fourButton"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="61dp"
-            android:layout_marginEnd="614dp"
-            android:layout_marginBottom="73dp"
-            android:background="@android:color/transparent"
-            android:text="4:3"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/threeButton"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/oneButton" />
-
+            android:textSize="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/nineButton"
+            app:layout_constraintBottom_toBottomOf="parent" />
         <Button
             android:id="@+id/editButton"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="97dp"
+            android:layout_height="40dp"
             android:layout_marginStart="40dp"
-            android:layout_marginEnd="591dp"
-            android:layout_marginBottom="155dp"
+            android:layout_marginBottom="40dp"
             android:backgroundTint="#1D3A8A"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
             android:text="Original"
             android:textColor="#FFF"
-            android:textSize="20dp"
+            android:textSize="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+            app:layout_constraintEnd_toStartOf="@+id/threeButton"/>
+        <Button
+            android:id="@+id/fourButton"
+            android:layout_width="68dp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/transparent"
+            android:text="4:3"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toStartOf="@id/editButton"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="327dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Editing"
+            android:text="@string/Editing"
             android:textColor="#000000"
             android:textSize="32sp"
             app:layout_constraintEnd_toStartOf="@+id/imageButton6"
@@ -105,14 +94,11 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="0dp"
+            android:layout_width="40dp"
             android:layout_height="0dp"
-            android:layout_marginStart="19dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="320dp"
-            android:layout_marginBottom="131dp"
+            android:layout_marginEnd="80dp"
             android:background="@android:color/transparent"
-            app:layout_constraintBottom_toTopOf="@+id/editButton"
             app:layout_constraintEnd_toStartOf="@+id/textView16"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -122,44 +108,41 @@
             android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="51dp"
-            android:layout_marginBottom="96dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="110dp"
             android:backgroundTint="#1D3A8A"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/threeButton"
+            app:layout_constraintStart_toEndOf="@id/imageButton2"
             app:srcCompat="@drawable/ic_crop" />
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginBottom="120dp"
+            android:layout_marginStart="40dp"
             android:background="@android:color/transparent"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/fourButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageButton3"
             app:srcCompat="@drawable/ic_minimze" />
 
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:layout_marginBottom="22dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="120dp"
             android:background="@android:color/transparent"
-            app:layout_constraintBottom_toTopOf="@+id/submitButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_rotate" />
 
         <ImageButton
             android:id="@+id/imageButton6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="80dp"
             android:background="@android:color/transparent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView16"
@@ -168,18 +151,16 @@
 
         <Button
             android:id="@+id/oneButton"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="62dp"
-            android:layout_marginBottom="18dp"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
             android:background="@android:color/transparent"
             android:text="1:1"
             android:textColor="#000000"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/fourButton"
-            app:layout_constraintEnd_toEndOf="@+id/fourButton"
-            app:layout_constraintStart_toStartOf="@+id/fourButton"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="14dp"
+            app:layout_constraintEnd_toStartOf="@id/fourButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

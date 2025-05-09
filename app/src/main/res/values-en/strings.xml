@@ -1,13 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MediaVault</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="test" translatable="false">test</string>
     <string name="helloGreeting">Welcome Back MCBootylicious123!</string>
     <string name="FirstName">First Name:</string>
     <string name="LastName">Last Name:</string>
     <string name="DisplayName">Display Name:</string>
-    <string name="Email" translatable="false">E-mail:</string>
     <string name="Password">Password:</string>
     <string name="SignUp">Sign Up</string>
     <string name="HasAccount"><u>Already have an account? Sign in!</u></string>
@@ -22,7 +19,6 @@
     <string name="Playlists_long">Playlists</string>
     <string name="AddPlus">Add +</string>
     <string name="AboutUsTitle">About Us</string>
-    <string name="AboutUsText" translatable="false">Marco Fernandes, No. 30566\\nSex bomb, proliferating skin trader, made man with own hands, 2015 2nd place finisher in olive eating competition.\\n\\nFrancisco Pimenta, No. 25418\\nSex nuke, professional 5-star collector, meat rod so big Donald Trump has removed tariffs on Portugal as long as America uses it to dig for oil, 2015 1st place finisher in olive eating competition.\\n\\nDuarte Pires, No. 29999\\nCurrently under probation for trafficking blunts of oregano herbs into Setúbal, previous prison bitch, 2015 last place in olive eating competition.</string>
     <string name="AppMadeBy">This app was made by:</string>
     <string name="Submit">Submit</string>
     <string name="OrShareCode">Or insert a share code:</string>
@@ -36,7 +32,7 @@
     <string name="Description">Description</string>
     <string name="AlbumTitle">Album Title:</string>
     <string name="InsertTitle">Insert title...</string>
-    <string name="InsertDescription">Insert a description...</string>
+    <string name="InsertDescription">Insert a description..</string>
     <string name="Finish">Finish</string>
     <string name="AddMedia">Add Media +</string>
     <string name="AlbumName">Album Name</string>

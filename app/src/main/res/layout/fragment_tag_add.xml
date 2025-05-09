@@ -22,21 +22,42 @@
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <!--Guias-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLogoSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6"/>
 
         <Button
             android:id="@+id/addButton2"
             android:layout_width="214dp"
             android:layout_height="40dp"
-            android:layout_marginStart="82dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="550dp"
-            android:layout_marginBottom="51dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="#1D3A8A"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:text="Finish"
+            android:text="@string/Finish"
             android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
@@ -45,30 +66,16 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_marginStart="40dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="271dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Description"
+            android:text="@string/Description"
             android:textColor="#000000"
             android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/textView5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editPlaylistTitle" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="116dp"
-            android:layout_height="123dp"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="17dp"
-            android:background="@drawable/fundo_cinzento"
-            android:fontFamily="@font/inter_regular"
-            android:text="Nome"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/editPlaylistTitle"
-            app:layout_constraintTop_toBottomOf="@+id/addButton" />
 
         <TextView
             android:id="@+id/textView14"
@@ -77,7 +84,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Playlist Title"
+            android:text="@string/TagTitle"
             android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +97,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="37dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Add Playlist"
+            android:text="@string/AddTag"
             android:textColor="#1E3A8A"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -100,55 +107,29 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="326dp"
-            android:layout_marginBottom="37dp"
-            app:layout_constraintBottom_toTopOf="@+id/addButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLogoSide"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop"
             app:srcCompat="@drawable/logo_menu" />
 
-        <Button
-            android:id="@+id/addButton"
-            android:layout_width="327dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="316dp"
-            android:layout_marginEnd="63dp"
-            android:layout_marginBottom="17dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Add Media +"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toTopOf="@+id/textView5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/title_text" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="39dp"
             android:layout_height="31dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="276dp"
             android:background="@android:color/transparent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop"
             app:srcCompat="@drawable/back" />
 
         <EditText
             android:id="@+id/editPlaylistTitle"
             android:layout_width="300dp"
             android:layout_height="48dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="65dp"
             android:ems="10"
+            android:layout_marginStart="20dp"
             android:inputType="text"
-            android:text="Insert title..."
-            app:layout_constraintEnd_toStartOf="@+id/textView5"
-            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/InsertTitle"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <EditText
@@ -159,7 +140,7 @@
             android:layout_marginTop="7dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Insert a description..."
+            android:text="@string/InsertDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 

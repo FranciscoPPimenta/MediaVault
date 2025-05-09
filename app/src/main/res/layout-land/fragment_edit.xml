@@ -96,7 +96,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="327dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Editing"
+            android:text="@string/Editing"
             android:textColor="#000000"
             android:textSize="32sp"
             app:layout_constraintEnd_toStartOf="@+id/imageButton6"

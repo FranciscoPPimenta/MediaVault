@@ -25,152 +25,164 @@
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="0dp">
 
+        <EditText
+            android:id="@+id/newPass"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="49dp"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/confirmNewPass"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="47dp"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/DisplayName"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="419dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/Email"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newPass" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/LastName"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/textView22" />
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/FirstName"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"/>
+
         <Button
             android:id="@+id/confirmButton"
             android:layout_width="0dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="63dp"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="67dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="50dp"
             android:backgroundTint="#1D3A8A"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:text="7 Playlists"
+            android:text="@string/Confirm"
             android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/confirmNewPass"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/changePass"
-            app:layout_constraintTop_toTopOf="@+id/seeAlbums" />
-
-        <Button
-            android:id="@+id/seeAlbums"
-            android:layout_width="0dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="17dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="3 Albums"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toTopOf="@+id/changePass"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editButton"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-        <Button
-            android:id="@+id/changePass"
-            android:layout_width="0dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="163dp"
-            android:layout_marginTop="63dp"
-            android:layout_marginEnd="247dp"
-            android:layout_marginBottom="64dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Change Password"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/confirmButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editButton" />
+            />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="49dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="55dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="FirstName SecondName, you have:"
-            android:textColor="#1E3A8A"
+            android:text="@string/ProfilePicture"
+            android:textColor="#000000"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/editButton"
-            android:layout_width="0dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="170dp"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="262dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Edit Profile"
-            android:textColor="#FFF"
-            app:layout_constraintEnd_toStartOf="@+id/seeAlbums"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="MCBootylicious123"
-            android:textColor="#1E3A8A"
-            android:textSize="26sp"
-            app:layout_constraintStart_toStartOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="480dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="MCBootylicious123@gmail.com"
-            android:textColor="#1E3A8A"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@id/textView16"
+            app:layout_constraintEnd_toStartOf="@id/imageView2"/>
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="378dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginBottom="38dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Profile"
+            android:text="@string/EditProfile"
             android:textColor="#000000"
             android:textSize="32sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="0dp"
             android:layout_height="42dp"
-            android:layout_marginStart="19dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="320dp"
-            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="80dp"
             android:background="@android:color/transparent"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
             app:layout_constraintEnd_toStartOf="@+id/textView16"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="58dp"
-            android:layout_marginEnd="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView9"
-            app:layout_constraintEnd_toStartOf="@+id/textView9"
+            android:layout_height="50dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginStart="180dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/textView16"
             app:srcCompat="@drawable/profile" />
 
 

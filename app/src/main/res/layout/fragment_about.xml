@@ -18,129 +18,146 @@
         app:menu="@menu/nav_menu" />
 
     <!-- Conteúdo Principal -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/content_layout"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="120dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="TAG Name"
-            android:textColor="#1E3A8A"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        <!-- Conteúdo da tela -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_regular"
-            android:text="Sort"
-            android:textColor="#000000"
-            android:textSize="14sp"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="212dp" />
+            <!--Guias-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.03" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineLogoSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6"/>
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_sort"
-            tools:layout_editor_absoluteX="786dp"
-            tools:layout_editor_absoluteY="213dp" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="92dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/AppMadeBy"
+                android:textColor="#1E3A8A"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/ic_add"
-            tools:layout_editor_absoluteX="747dp"
-            tools:layout_editor_absoluteY="20dp" />
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+                app:srcCompat="@drawable/ic_add" />
 
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/ic_notifications"
-            tools:layout_editor_absoluteX="773dp"
-            tools:layout_editor_absoluteY="18dp" />
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+                app:layout_constraintTop_toTopOf="@+id/imageButton8"
+                app:srcCompat="@drawable/ic_notifications" />
 
-        <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/ic_profile"
-            tools:layout_editor_absoluteX="801dp"
-            tools:layout_editor_absoluteY="16dp" />
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_profile" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_regular"
-            android:text="Filter"
-            android:textColor="#000000"
-            android:textSize="14sp"
-            tools:layout_editor_absoluteX="749dp"
-            tools:layout_editor_absoluteY="212dp" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/AboutUsTitle"
+                android:textColor="#1E3A8A"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_sort"
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="213dp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineLogoSide"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_menu" />
 
-        <TextView
-            android:id="@+id/title_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="Tags"
-            android:textColor="#1E3A8A"
-            android:textSize="32sp"
-            tools:layout_editor_absoluteX="387dp"
-            tools:layout_editor_absoluteY="93dp" />
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_menu" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/logo_menu"
-            tools:layout_editor_absoluteX="331dp"
-            tools:layout_editor_absoluteY="16dp" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="400dp"
+                android:layout_height="450dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="#1E3A8A"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
 
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/ic_menu"
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Marco Fernandes, No. 30566\nSex bomb, proliferating skin trader,\n made man with own hands,\n 2015 2nd place finisher in olive eating competition.\n\nFrancisco Pimenta, No. 25418\nSex nuke, professional 5-star collector,\n meat rod so big Donald Trump has removed\ntariffs on Portugal as long as America uses it to dig for oil,\n 2015 1st place finisher in olive eating competition.\n\nDuarte Pires, No. 29999\nCurrently under probation for trafficking blunts of oregano herbs into Setúbal,\n previous prison bitch, 2015 last place in olive eating competition."
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/addButton"
-            android:layout_width="148dp"
-            android:layout_height="38dp"
-            android:backgroundTint="#1D3A8A"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Add +"
-            android:textColor="#FFF"
-            tools:layout_editor_absoluteX="351dp"
-            tools:layout_editor_absoluteY="141dp" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

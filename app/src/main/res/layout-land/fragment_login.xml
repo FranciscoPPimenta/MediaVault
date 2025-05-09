@@ -17,7 +17,7 @@
         android:background="@drawable/edittext_background"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toEndOf="@+id/logoImage"
         app:layout_constraintTop_toBottomOf="@id/labelEmail" />
 
@@ -28,9 +28,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="340dp"
-        android:text="Email"
+        android:text="@string/Email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toEndOf="@+id/logoImage"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,7 +45,7 @@
         android:backgroundTint="#1D3A8A"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:text="Sign In"
+        android:text="@string/SignIn"
         android:textColor="#FFF"
         app:layout_constraintBottom_toTopOf="@+id/footer"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,9 +61,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="332dp"
-        android:text="Password"
+        android:text="@string/Password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toEndOf="@+id/logoImage"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
@@ -140,7 +140,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="296dp"
         android:layout_marginBottom="10dp"
-        android:text="Forgot Password"
+        android:text="@string/ForgotPassword"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"

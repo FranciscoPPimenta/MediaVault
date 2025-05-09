@@ -27,39 +27,39 @@
             android:id="@+id/add_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="70dp"
-            android:layout_marginBottom="176dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="46dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Add +"
+            android:text="@string/AddPlus"
             android:textColor="#1E3A8A"
             android:textSize="10sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/playlist_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginBottom="176dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="36dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Playlists"
+            android:text="@string/Playlists_long"
             android:textColor="#1E3A8A"
             android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="248dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="58dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Welcome back MCBootylicious123!"
+            android:text="@string/helloGreeting"
             android:textColor="#1E3A8A"
             android:textSize="26sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView5"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo_menu" />
@@ -103,17 +103,6 @@
             app:layout_constraintEnd_toStartOf="@+id/imageButton8"
             app:layout_constraintTop_toTopOf="@+id/imageButton8"
             app:srcCompat="@drawable/ic_notifications" />
-
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:background="@android:color/transparent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_menu" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
